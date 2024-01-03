@@ -1,4 +1,7 @@
 {
+  "compilerOptions": {
+    "strict": false
+  },
   "files": [],
   "references": [
     {
