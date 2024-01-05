@@ -14,7 +14,7 @@
       />
     </el-menu-item>
     <div style="width: 20px" />
-    <el-menu-item index="1">首页</el-menu-item>
+    <router-link to="/body"><el-menu-item index="1">首页</el-menu-item></router-link>
     <el-menu-item index="3">文章</el-menu-item>
     <div class="flex-grow" />
     <el-sub-menu index="2">

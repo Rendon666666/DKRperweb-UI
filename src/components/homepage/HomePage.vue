@@ -6,8 +6,12 @@ import MenuHead from '../homepage/pagehead/MenuHead.vue';
 <template>
   <div>
     <el-container >
-      <el-header><MenuHead/></el-header>
-      <el-main>Main</el-main>
+      <el-header>
+        <MenuHead/>
+      </el-header>
+      <el-main>
+        <router-view/>
+      </el-main>
     </el-container>
   </div>
 </template>
