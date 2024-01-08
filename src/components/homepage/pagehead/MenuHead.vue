@@ -7,7 +7,7 @@
       :ellipsis="false"
       @select="handleSelect"
   >
-    <el-menu-item index="/">
+    <el-menu-item index="/index">
       <img
           style="width: 150px;"
           src="@/images/DKR_logo.png"
@@ -47,5 +47,10 @@ const handleSelect = (key: string, keyPath: string[]) => {
 <style>
 .flex-grow {
   flex-grow: 1;
+}
+.el-menu-demo .el-menu-item:first-child {
+  background-color: transparent !important;
+  color: inherit !important;
+  border: none !important;
 }
 </style>
