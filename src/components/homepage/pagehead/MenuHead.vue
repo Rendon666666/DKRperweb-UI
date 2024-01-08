@@ -1,24 +1,27 @@
 <template>
   <el-menu
-      :default-active="activeIndex"
+      router
+      :default-active="$route.path"
       class="el-menu-demo"
       mode="horizontal"
       :ellipsis="false"
       @select="handleSelect"
   >
-    <el-menu-item index="0">
+    <el-menu-item index="/">
       <img
-          style="width: 100px"
-          src="@/images/element-plus-logo.svg"
-          alt="Element logo"
+          style="width: 150px;"
+          src="@/images/DKR_logo.png"
+          alt="DKR logo"
       />
     </el-menu-item>
     <div style="width: 20px" />
-    <router-link to="/body"><el-menu-item index="1">首页</el-menu-item></router-link>
+    <el-menu-item index="/body">首页</el-menu-item>
     <el-menu-item index="3">文章</el-menu-item>
     <div class="flex-grow" />
     <el-sub-menu index="2">
-      <template #title>头像</template>
+      <template #title>
+        <el-avatar> user </el-avatar>
+      </template>
       <el-menu-item index="2-1">item one</el-menu-item>
       <el-menu-item index="2-2">item two</el-menu-item>
       <el-menu-item index="2-3">item three</el-menu-item>
