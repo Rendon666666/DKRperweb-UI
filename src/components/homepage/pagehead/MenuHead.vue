@@ -16,11 +16,11 @@
     </el-menu-item>
     <div style="width: 20px" />
     <el-menu-item index="/body">首页</el-menu-item>
-    <el-menu-item index="3">文章</el-menu-item>
+    <el-menu-item index="/login">文章</el-menu-item>
     <div class="flex-grow" />
-    <el-sub-menu index="2">
+    <el-sub-menu index="/login">
       <template #title>
-        <el-avatar> user </el-avatar>
+        <el-avatar> 登录 </el-avatar>
       </template>
       <el-menu-item index="2-1">item one</el-menu-item>
       <el-menu-item index="2-2">item two</el-menu-item>

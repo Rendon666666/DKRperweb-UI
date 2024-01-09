@@ -9,7 +9,7 @@ import MenuHead from '../homepage/pagehead/MenuHead.vue';
       <el-header>
         <MenuHead/>
       </el-header>
-      <el-main>
+      <el-main class="container">
         <router-view/>
       </el-main>
     </el-container>
@@ -17,5 +17,11 @@ import MenuHead from '../homepage/pagehead/MenuHead.vue';
 </template>
 
 <style scoped>
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  /* background-color: red; */
+}
 
 </style>

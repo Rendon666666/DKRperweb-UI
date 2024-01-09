@@ -75,9 +75,17 @@ export default {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  font-size: 32px; /* 这里是给标题设置的字体大小，您可以根据自己的需要进行修改 */
+}
+
+.page-content h2 {
+  font-size: 50px; /* 这里是给标题设置的字体大小，您可以根据自己的需要进行修改 */
   color: #fff; /* 这里是给标题设置的字体颜色，您也可以根据自己的需要进行修改 */
-  text-shadow: 3px 3px rgba(0, 0, 0, 0.5); /* 这里是给标题设置的阴影效果，您也可以根据自己的需要进行修改 */
+  text-shadow: 3px 1px rgba(0, 0, 0, 0.5); /* 这里是给标题设置的阴影效果，您也可以根据自己的需要进行修改 */
+}
+
+.page-content p {
+  color: #fff;
+  margin: 1rem 0 1rem 0;
 }
 
 .text-container {
