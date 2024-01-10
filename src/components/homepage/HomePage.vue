@@ -4,7 +4,7 @@ import MenuHead from '../homepage/pagehead/MenuHead.vue';
 </script>
 
 <template>
-  <div>
+  <div >
     <el-container >
       <el-header>
         <MenuHead/>

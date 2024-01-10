@@ -14,13 +14,16 @@
           alt="DKR logo"
       />
     </el-menu-item>
-    <div style="width: 20px" />
+    <div style="width: 20px"/>
     <el-menu-item index="/body">首页</el-menu-item>
-    <el-menu-item index="/login">文章</el-menu-item>
-    <div class="flex-grow" />
-    <el-sub-menu index="/login">
+    <el-menu-item index="/article">文章</el-menu-item>
+    <div class="flex-grow"/>
+    <el-sub-menu index="/">
+
       <template #title>
-        <el-avatar> 登录 </el-avatar>
+        <el-menu-item index="/login">
+          <el-avatar> 登录</el-avatar>
+        </el-menu-item>
       </template>
       <el-menu-item index="2-1">item one</el-menu-item>
       <el-menu-item index="2-2">item two</el-menu-item>
@@ -32,11 +35,12 @@
         <el-menu-item index="2-4-3">item three</el-menu-item>
       </el-sub-menu>
     </el-sub-menu>
+
   </el-menu>
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import {ref} from 'vue'
 
 const activeIndex = ref('1')
 const handleSelect = (key: string, keyPath: string[]) => {
@@ -47,10 +51,15 @@ const handleSelect = (key: string, keyPath: string[]) => {
 <style>
 .flex-grow {
   flex-grow: 1;
+  backdrop-filter: saturate(50%) blur(8px);
+  background: rgba(255,255,255,.7);
 }
+
 .el-menu-demo .el-menu-item:first-child {
   background-color: transparent !important;
   color: inherit !important;
   border: none !important;
+
 }
+
 </style>

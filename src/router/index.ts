@@ -14,6 +14,11 @@ const router = createRouter({
                     path: '/body',
                     name: 'body',
                     component: () => import('../components/homepage/mainbody/body.vue')
+                },
+                {
+                    path: '/article',
+                    name: 'article',
+                    component: () => import('../components/article/ArticleNavigation.vue')
                 }
             ]
 
