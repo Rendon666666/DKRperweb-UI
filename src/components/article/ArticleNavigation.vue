@@ -10,7 +10,7 @@
 
 
         <div v-for="o in 4" :key="o" class="text item">
-         <el-link href="" type="可以尝试循环展示不同颜色"> {{'文章类型 ' + o }}</el-link>
+         <el-link href="/articleHome" type="可以尝试循环展示不同颜色"> {{'文章类型 ' + o }}</el-link>
         </div>
 
       </el-card>

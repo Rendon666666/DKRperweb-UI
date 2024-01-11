@@ -19,9 +19,11 @@ import MenuHead from '../homepage/pagehead/MenuHead.vue';
 <style scoped>
 
 .container {
-  width: 80%;
-  margin: 0 auto;
-  /* background-color: red; */
+  width: 100%;
+  height: 100%;
+  margin:0 0 0 0;
+  overflow:hidden hidden;
+
 }
 
 </style>

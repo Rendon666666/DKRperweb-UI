@@ -19,6 +19,11 @@ const router = createRouter({
                     path: '/article',
                     name: 'article',
                     component: () => import('../components/article/ArticleNavigation.vue')
+                },
+                {
+                    path: '/articleHome',
+                    name: 'articleHome',
+                    component: () => import('../components/article/articlepresentation/ArticleHomePage.vue')
                 }
             ]
 
