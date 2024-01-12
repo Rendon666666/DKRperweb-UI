@@ -23,7 +23,14 @@ const router = createRouter({
                 {
                     path: '/articleHome',
                     name: 'articleHome',
-                    component: () => import('../components/article/articlepresentation/ArticleHomePage.vue')
+                    component: () => import('../components/article/articlepresentation/ArticleHomePage.vue'),
+                    children:[
+                        {
+                            path: '/articlebody',
+                            name: 'articlebody',
+                            component: () => import('../components/article/articlepresentation/contentsubject/ArticleBody.vue')
+                        },
+                    ]
                 }
             ]
 

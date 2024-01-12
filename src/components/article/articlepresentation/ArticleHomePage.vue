@@ -9,7 +9,9 @@ import Navigation from "@/components/article/articlepresentation/navigation/Navi
       <el-aside id="sidebar" >
         <Navigation></Navigation>
       </el-aside>
-      <el-main>Main</el-main>
+      <el-main>
+        <router-view/>
+      </el-main>
     </el-container>
   </div>
 </template>
@@ -17,7 +19,8 @@ import Navigation from "@/components/article/articlepresentation/navigation/Navi
 <style >
 #sidebar{
   height: 600px;
-  width: 200px;
+  width: 240px;
+  margin: 0px 5px 0px 10px;
   border: 1px solid red;
 }
 </style>
